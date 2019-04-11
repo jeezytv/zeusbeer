@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css?family=Amiri|Cinzel+Decorative:400,900");
+.header {
+  background: url("../img/beers.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .6;
+  z-index: 0;
+}
+
+.header-logo {
+  text-align: center;
+  opacity: .5;
+}
+
+.header__content {
+  position: relative;
+  z-index: 22;
+  line-height: 60px;
+  margin-top: -30px;
+}
+
+.header__title {
+  color: #ffffff;
+  font-size: 60px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 900;
+  text-align: center;
+  z-index: 22;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.header__title:before {
+  content: '';
+  width: 32%;
+  height: 4px;
+  background-color: #cdb378;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.header__title:after {
+  content: '';
+  width: 32%;
+  height: 4px;
+  background-color: #cdb378;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.header__subtitle {
+  font-size: 36px;
+  color: #ffffff;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.header__subtitle-copy {
+  font-family: 'Amiri', serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #cdb378;
+  display: block;
+  text-align: center;
+  font-style: italic;
+}
+
+.header__subtitle-scroll {
+  font-family: 'Amiri', serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #b4ba98;
+  display: block;
+  text-align: center;
+  font-style: italic;
+}
+
+.brewing {
+  position: relative;
+  width: 100%;
+}
+
+.brewing-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+  position: relative;
+}
+
+.brewing-block__img {
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+
+.brewing-block__img img {
+  width: 390px;
+}
+
+.brewing-block__text {
+  margin-left: 200px;
+}
+
+.brewing-block__text h1 {
+  color: #ffffff;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 400;
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+.brewing-block__text p {
+  color: #cdb378;
+  font-family: 'Amiri', serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.quality {
+  position: relative;
+  width: 90%;
+  background-color: #232615;
+  background-image: url("../img/logo-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin-top: 80px;
+}
+
+.quality:after {
+  content: '';
+  position: absolute;
+  background-image: url("../img/beer.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 76%;
+  width: 100%;
+  height: 717px;
+  top: -200px;
+}
+
+.quality-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+  position: relative;
+}
+
+.quality-block__img {
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+
+.quality-block__img img {
+  width: 390px;
+}
+
+.quality-block__text {
+  margin-left: 200px;
+}
+
+.quality-block__text h1 {
+  color: #cdb378;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 400;
+  font-size: 48px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.quality-block__text p {
+  color: #b4ba98;
+  font-family: 'Amiri', serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.drink {
+  background-image: url("../img/drink-beer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+}
+
+.drink-block {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 100px;
+}
+
+.drink-block__text {
+  position: absolute;
+  right: 11%;
+  color: #1a1c0f;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 72.01px;
+}
+
+.crafted {
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+.crafted-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 200px;
+  position: relative;
+}
+
+.crafted-block__img {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.crafted-block__img img {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  top: -170px;
+}
+
+.crafted-block__text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 40px;
+}
+
+.crafted-block__title {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #cdb378;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 900;
+}
+
+.crafted-block__description {
+  color: #b4ba98;
+  font-family: 'Amiri', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38.01px;
+}
+
+.journey-block__text {
+  text-align: center;
+}
+
+.journey-block__title {
+  color: #cdb378;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60.01px;
+  margin-bottom: 15px;
+}
+
+.journey-block__subtitle {
+  display: block;
+  color: #b4ba98;
+  font-family: 'Amiri', serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48.01px;
+  margin-bottom: 35px;
+}
+
+body {
+  background: #f1f1f1 url("../img/main-bg.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 5267px;
+  font-family: 'Cinzel Decorative' cursive;
+  overflow-x: hidden;
+}
+
+body .button {
+  border: 2px solid #404429;
+  color: #fff;
+  font-family: 'Amiri', serif;
+  font-weight: 400;
+  padding: 15px 60px;
+  text-decoration: none;
+}
+
+.sim-button {
+  text-align: center;
+  cursor: pointer;
+}
+
+.button7 {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.button7 a {
+  color: #cdb378;
+  text-decoration: none;
+  display: block;
+}
+
+.button7 span {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.button7::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  background-color: rgba(205, 179, 120, 0.5);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: scale(1, 0.5);
+  transform: scale(1, 0.5);
+}
+
+.button7:hover::before {
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
